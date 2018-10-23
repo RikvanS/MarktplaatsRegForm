@@ -64,3 +64,31 @@ Error bleek te gaan om een verwijzing op lijn 19, probleem met de link legging t
 Naar login.php wordt doorverwezen bij succesvolle aanmelding, pagina aangemaakt met een simpele echo om aan te tonen dat het werkt.
 --------
 
+23/10 11:29
+
+Toegevoegd: Login pagina. Code wederom van https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+Eigen notities toegevoegd aan code om begrip/beheersing van code te tonen.
+Momenteel verwijst de welcome pagina nog naar een placeholder pagina. Na voltooiing login page daarmee bezig.
+
+Op het moment van schrijven is er nog geen log uit functie/mogelijkheid, zolang de sessie behouden blijft verwijst de login knop dus de facto naar de placeholder welcome pagina. Dit wordt later verholpen dmv een logout pagina met een session destroy commando.
+
+---------
+11:50
+Linkdump van aanpassingen en notities bij login pagina volgt hieronder.
+
+Uitleg over sessions: http://php.net/manual/en/session.examples.basic.php
+login start met session_start(), dit is vereist om een sessie te starten om login functionaliteit te realiseren. 
+
+login functionaliteit hergebruikt een deel van de registratie code: de checks om te zien of info correct is ingevuld en of er überhaupt iets is ingevuld.
+
+Daaronder bij validate credentials wordt er gekeken of username error en password error allebei leeg zijn (geen fouten bij invoer). Zo ja, zijn ze beide correct ingevuld. Hierna wordt via een $sql commando een query gedraaid op de gekoppelde database.
+
+(Note: gebruik van de mysqli statements en parameters in het volgende blok code gaat momenteel nog iets aan mijn kennis voorbij. Ik begrijp dat het data uit de database op een manier oppakt dat de verdere scripts kunnen draaien, echter is dit een punt waar ik nog meer over moet leren om volledig begrip te garanderen. Leerdoel voor deze week)
+
+Als de ingevoerde gegevens kloppen met de gegevens in de database wordt er een nieuwe sessie gestart met loggedin = true en wordt de gebruiker doorverwezen naar de welcome.php pagina. Als de gegevens niet kloppen wordt er een error weergegeven.
+
+---------
+
+13:10:
+Welcome pagina toegevoegd. Wederom code van tutorialspoint gebruikt. Sessie wordt wederom gestart bovenin, als de sessie geen loggedin true heeft wordt gebruiker doorverwezen naar login.php.
+De pagina zelf bestaat uit een verlkoming die de in de sessie actieve gebruikersnaam echo'd (Afgevangen met htmlspecialchars tegen scripting risico) met daaronder een button die linkt naar de reset password pagina en de logout pagina. Deze bestaan beide momenteel nog niet, dit wordt de volgende stap.
