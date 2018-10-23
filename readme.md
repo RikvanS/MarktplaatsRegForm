@@ -158,3 +158,6 @@ Extra uitleg over prepared statements
 
 16:15 - finish:
 Begin gemaakt met welkomstpagina. Topnavs verwijzen naar de php pagina's.
+
+To-do voor volgende keer:
+main page afmaken. Styling overeen laten komen met log-in/registreer pagina's voor uniformiteit.
