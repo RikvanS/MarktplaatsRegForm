@@ -62,7 +62,8 @@ config.php include comment weer verwijderd voor verdere test. Returnde hierna ee
 Error bleek te gaan om een verwijzing op lijn 19, probleem met de link legging tussen db en form. Verwijzingen gecheckt en correct gelegd.
 
 Naar login.php wordt doorverwezen bij succesvolle aanmelding, pagina aangemaakt met een simpele echo om aan te tonen dat het werkt.
---------
+
+-----------
 
 23/10 11:29
 
@@ -145,3 +146,15 @@ De param_id is de session_id. De param_id wordt aangeroepen in de $sql statement
 zie (http://php.net/manual/en/function.session-id.php)
 
 Hierna probeert het script de hierboven aangemaakte statement uit te voeren. Als alles goed is ingevuld en werkt wordt het password in de database aangepast, de sessie vernietigd (aangezien er op dat moment ingelogd is met een ander password) en de gebruiker doorverwezen naar de login pagina. Daarna sluit dmv exit(); het script.
+
+-----------------
+
+15:04
+https://www.tutorialrepublic.com/php-tutorial/php-mysql-prepared-statements.php
+
+Extra uitleg over prepared statements
+
+---------------
+
+16:15 - finish:
+Begin gemaakt met welkomstpagina. Topnavs verwijzen naar de php pagina's.
