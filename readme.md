@@ -46,3 +46,21 @@ https://auth0.com/blog/hashing-passwords-one-way-road-to-security/
 Uitleg over de veelvuldig gebruikte mysqli class:
 http://php.net/manual/en/book.mysqli.php en http://php.net/manual/en/class.mysqli.php
 
+----------
+
+15:50 review/debug moment:
+
+Local host controle geeft een werkend, gestyled registratie formulier.
+Proberen een lege invoer te submitten geeft correcte fouten weer op de juiste plek.
+Echter komt een error naar voren : Notice: Undefined variable: link in C:\xampp\htdocs\Registration form\register.php on line 92
+
+De $link var die voor problemen zorgt wordt gedefinieerd in de config.php, die is echter voor testdoeleinden momenteel weg gecomment in de register.php
+
+Voor verdere controle/debug en om product mooier op te leveren, volgende stap is aanmaken van een lokale DB en koppeling te leggen.
+
+config.php include comment weer verwijderd voor verdere test. Returnde hierna een boolean error op 2 lijnen, om uit te kunnen zoeken wat error precies was in config.php de lijn mysqli report toegevoegd. (zie https://phpdelusions.net/mysqli/error_reporting)
+Error bleek te gaan om een verwijzing op lijn 19, probleem met de link legging tussen db en form. Verwijzingen gecheckt en correct gelegd.
+
+Naar login.php wordt doorverwezen bij succesvolle aanmelding, pagina aangemaakt met een simpele echo om aan te tonen dat het werkt.
+--------
+
