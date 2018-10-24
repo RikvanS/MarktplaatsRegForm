@@ -161,3 +161,16 @@ Begin gemaakt met welkomstpagina. Topnavs verwijzen naar de php pagina's.
 
 To-do voor volgende keer:
 main page afmaken. Styling overeen laten komen met log-in/registreer pagina's voor uniformiteit.
+
+------------
+
+24-10 mini update:
+
+Voor betere styling over de verschillende pagina's is het wenselijk om op elke pagina dezelfde topnav te plaatsen, al dan niet met dezelfde links (Link naar login/registreer vanaf login en registreer pagina's is overbodig, de link naar home daarentegen essentieel.)
+Dit effect heb ik in mijn portfolio ook al met succes gebruikt, kan ik dus gemakkelijk kopieren en overbrengen. Zorgt voor een meer uniform aanvoelend geheel, in de huidige vorm voelen de signup/login pagina's als willekeurige losstaande pagina's.
+
+Main page is momenteel nog erg kaal, voor presenteer doeleinden is het wellicht wenselijk om een grid met afbeeldingen te plaatsen voor een impressie van hoe een final product eruit komt te zien. Tevens goede oefening met grids.
+
+Beginnend onderzoek gedaan naar een zoekfunctie, na het opleveren van een presentabele splash pagina is dit de volgende stap. De gekoppelde database bestaat momenteel alleen nog maar uit een inlog database, voor presenteren van een werkende zoekfunctie is het wellicht wenselijk om een vooraf gepopuleerde mini DB aan te maken met producten oid. 
+
+Re: de gisteren genoemde "si" die ik niet kon plaatsen: Refereert aan wat er in de parameter is ingevuld. In het geval van si gaat het om een string en een integer, ging het om meerdere strings werd per string een s gebruikt (bijv wijzigen van naam adres woonplaats ipv password zou in de mysqli statement bind parameter een $stmt, "sss", etc gebruikt worden)

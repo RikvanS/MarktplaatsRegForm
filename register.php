@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  rather than waste time deleting and re-writing just for the sake of "showing that I can". As above in the PHP, I will instead add notes to the code to display my understanding -->
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 350px; padding: 20px; margin:0 auto ;}
     </style>
 </head>
 <body>

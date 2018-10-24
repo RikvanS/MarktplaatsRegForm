@@ -1,27 +1,44 @@
+body {
+    margin:0;
+    background-color: #f8f8ff;
+}
+
 .navcontainer {
     overflow: hidden;
-    background-color: black;
+    background-color: #3174AF;
     position: fixed;
     top: 0;
     width: 100%;
+    margin:0;
 }
 
 .navcontainer a {
-    float:left;
+    float:right;
     display: block;
     color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
+    margin-right:10px;
 }
 .navcontainer a:hover {
     cursor: pointer;
-    background: #ddd;
-    color: black;
+    background: #175081;
+    
 }
 
 .main {
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 20%;
+    padding-top: 10%;
+}
+h1 {
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+.navcontainer .site-logo {
+    float: left;
+    margin-left: 2%;
 }
