@@ -9,12 +9,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST['search']))){
         $search_err = "Searchfield cannot be empty";
     } else {
-        $new_search = trim($_POST["new_search"]);
+        $search = trim($_POST["search"]);
     }
     if(empty($search_err)){
-        $sql = "SELECT username FROM users WHERE "
+        $sql = "SELECT * FROM users WHERE username LIKE '%$search'";
+        } else {
+        echo "Error";
+        }       
     }
-}
+
 
 
 ?>
@@ -39,6 +42,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <label>Search here</label>
                 <input type="text" name="search" class="form-control" value="<?php echo $search; ?>">
                 <span class="help-block"><?php echo $search_err; ?></span>
+
 </body>
 </html>
 

@@ -31,14 +31,61 @@ body {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 10%;
+    padding-bottom: 5%;
 }
 h1 {
     text-align: center;
     padding-top: 10%;
 }
 
+h2 {
+    text-align: center;
+
+}
+
 
 .navcontainer .site-logo {
     float: left;
     margin-left: 2%;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    background-color: #3174AF;
+    width: 100%;
+    position: relative;
+    
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    display: inline-block;
+}
+
+footer a:hover{
+    cursor: pointer;
+    background: #175081;   
+}
+
+.sub-footer {
+    text-align: center;
+    display: block;
+    background-color: #3174AF;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}
+
+.sub-footer a { 
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    display: inline-block;
+}
+
+.sub-footer a:hover {
+    cursor: pointer;
+    background: #175081;   
 }

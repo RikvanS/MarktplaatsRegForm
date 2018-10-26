@@ -76,12 +76,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Reset Password</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
+        .wrapper{ width: 350px; padding: 20px; margin: 0 auto;}
     </style>
 </head>
 <body>
+<div class="navcontainer">
+        <nav>
+            <a href="login2.php">Log in</a>
+            <a href="register.php">Register</a>
+            <a class="site-logo" href="index.html"><span class="logo"></span>MarketPlace</span></a>
+        </nav>
+</div>
     <div class="wrapper">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
@@ -102,5 +110,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
         </form>
     </div>    
+    <footer class="sub-footer">
+            <a href="#">About</a>
+            <a href="#">Our team</a>
+            <a href="#">Work with us</a>
+            <a href="#">Become a partner</a>
+            <a href="#">F.A.Q.</a>
+            <a href="#">Contact us</a>
+        </footer>  
 </body>
 </html>

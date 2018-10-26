@@ -1,7 +1,7 @@
 <?php
 // Include config file (This will call our config file assumed created as stated in readme file to connect to the correct DB)
 require_once "config.php";
- 
+
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -99,6 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>registration form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <!-- Bootstrap has been used in the example copied, as the main point of today's exercise is delivering a working product I have chosen to keep the HTML/CSS provided
  rather than waste time deleting and re-writing just for the sake of "showing that I can". As above in the PHP, I will instead add notes to the code to display my understanding -->
     <style type="text/css">
@@ -107,6 +108,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+
+    <div class="navcontainer">
+        <nav>
+            <a href="login2.php">Log in</a>
+            <a href="register.php">Register</a>
+            <a class="site-logo" href="index.html"><span class="logo"></span>MarketPlace</span></a>
+        </nav>
+    </div>
     <div class="wrapper">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
@@ -134,5 +143,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Already have an account? <a href="login2.php">Login here</a>.</p>
         </form>
     </div>    
+    <footer class="sub-footer">
+            <a href="#">About</a>
+            <a href="#">Our team</a>
+            <a href="#">Work with us</a>
+            <a href="#">Become a partner</a>
+            <a href="#">F.A.Q.</a>
+            <a href="#">Contact us</a>
+        </footer>  
 </body>
 </html>

@@ -174,3 +174,18 @@ Main page is momenteel nog erg kaal, voor presenteer doeleinden is het wellicht 
 Beginnend onderzoek gedaan naar een zoekfunctie, na het opleveren van een presentabele splash pagina is dit de volgende stap. De gekoppelde database bestaat momenteel alleen nog maar uit een inlog database, voor presenteren van een werkende zoekfunctie is het wellicht wenselijk om een vooraf gepopuleerde mini DB aan te maken met producten oid. 
 
 Re: de gisteren genoemde "si" die ik niet kon plaatsen: Refereert aan wat er in de parameter is ingevuld. In het geval van si gaat het om een string en een integer, ging het om meerdere strings werd per string een s gebruikt (bijv wijzigen van naam adres woonplaats ipv password zou in de mysqli statement bind parameter een $stmt, "sss", etc gebruikt worden)
+
+------------
+
+26/10 13:10:
+Topnavs toegevoegd aan registratie, login en welkom pagina. Momenteel zit er nog redundancy in de navs, in een final version moet als de user ingelogd is de log-in vervangen worden door een logout. Bij de welkomstpagina de login en registratie links verwijderd, als gebruiker al ingelogd is is het niet logisch om deze nog weer te geven.
+Tevens zou in een final version als de gebruiker ingelogd is de login knop op de splash page vervangen kunnen/moeten worden door een "mijn persoonlijke omgeving" knop. Aangezien deze functionaliteit (de mijn persoonlijke omgeving) nog niet bestaat en mijns inziens het beste met toegevoegde javascript functionaliteit kan worden gerealiseerd (Hiden danwel displayen van inhoud afhankelijk van een staat) wordt dit gepostponed tot een latere versie.
+
+13:50:
+
+Footer toegevoegd aan main page en sub-pages. Styling levert enigszins een probleem, de footer fixen aan de onderkant van de pagina dmv position absolute bottom 0 werkt op de kleinere sub-pagina's echter op de main page plakt dit de footer vast midden in de tekst. Makkelijkste oplossing is waarschijnlijk de footer een andere class meegeven op de subpagina's, en zo stylen naar de pagina, echter zou dit waarschijnlijk mooier/eleganter moeten kunnen. Gezien de tijdsdruk nu eerst de quick fix pushen en een note maken om later opnieuw naar te kijken.
+
+14:20:
+Topnav en footers correct gestyled toegevoegd aan alle pagina's, inclusief de reset pass pagina (bijna gemist). Hierdoor is in ieder geval het aangeleverde product een coherent, kloppend geheel.
+
+Tot oplevertijd (15:00) staat de zoekfunctie op het programma. Product zoals het nu is is presentabel en uniform, meeste toegevoegde waarde komt door een werkende zoekfunctie.
