@@ -129,7 +129,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>    
-    <footer class="sub-footer">
+        <footer class="sub-footer">
             <a href="#">About</a>
             <a href="#">Our team</a>
             <a href="#">Work with us</a>

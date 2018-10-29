@@ -189,3 +189,12 @@ Footer toegevoegd aan main page en sub-pages. Styling levert enigszins een probl
 Topnav en footers correct gestyled toegevoegd aan alle pagina's, inclusief de reset pass pagina (bijna gemist). Hierdoor is in ieder geval het aangeleverde product een coherent, kloppend geheel.
 
 Tot oplevertijd (15:00) staat de zoekfunctie op het programma. Product zoals het nu is is presentabel en uniform, meeste toegevoegde waarde komt door een werkende zoekfunctie.
+
+29/10 begin van de dag toevoeging:
+
+Het initiele plan voor vandaag is om de styling iets meer te verbeteren (Grid op de splash page is al toegevoegd met placeholder afbeeldingen van auto's van Pexels.) en te kijken naar de zoekfunctie. Vanaf morgen gaan we herschrijven in correcte OOP stijl
+
+11:25
+Eerste opzet van een simpele zoekfunctie is live. Momenteel nog onbeveiligd en kaal/simplistisch, maar functioneel.
+Volgende stappen zijn het verbeteren van de code van de zoekfunctie en met name beveiliging inbouwen.
+Huidige versie gepusht.
