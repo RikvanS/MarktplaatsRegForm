@@ -13,26 +13,13 @@
         <nav>
             <a href="login2.php">Log in</a>
             <a href="register.php">Register</a>
-            <a class="site-logo" href="index.html"><span class="logo"></span>MarketPlace</span></a>
+            <a class="site-logo" href="index.php"><span class="logo"></span>MarketPlace</span></a>
         </nav>
     </div>
 
     <h1>Welcome to MarketPlace</h1>
     <h2>Let us help you find your value today</h2>
 
-    <!DOCTYPE html>
-<html>
-	<head>
-		<title>Search</title>
-	</head>
-	<body>
-		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-			<input type="text" name="q" placeholder="First name here">
-			<input type="submit" name="search" value="Search">
-		</form>
-		<?php echo $output; ?>
-	</body>
-</html>
 <?php
 
 require_once "config.php";
@@ -41,23 +28,28 @@ $output = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $q = trim($_POST['q']);
-    $query = mysqli_query($link, "SELECT * FROM users WHERE username LIKE '%$q%'");
+    $query = mysqli_query($link, "SELECT * FROM advertenties WHERE naam LIKE '%$q%'");
     $count = mysqli_num_rows($query);
     if ($count == "0") {
         $output = '<h2>No results found!</h2>';
     } else {
         while ($row = mysqli_fetch_array($query)) {
-            $su = $row['username'];
-            $s = $row['password'];
+            $su = $row['naam'];
+            $s = $row['prijs'];
             $output .= '<h2> '.$su. '<br>' .$s.' </h2><br>';
         }
     }
 }
-else{ 
-      echo  "<p>Please enter a search query</p>"; 
-}
+
 
 ?>
+        <div class="main-search">
+		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+			<input type="text" name="q" placeholder="Search for your treasure!">
+			<input type="submit" name="search" value="Search">
+		</form>
+		<?php echo $output; ?>
+        </div>
 
 
         <div class="main">

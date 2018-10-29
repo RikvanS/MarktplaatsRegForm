@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <div class="navcontainer">
         <nav>
 
-            <a class="site-logo" href="index.html"><span class="logo"></span>MarketPlace</span></a>
+            <a class="site-logo" href="index.php"><span class="logo"></span>MarketPlace</span></a>
         </nav>
     </div>
     <div class="page-header">

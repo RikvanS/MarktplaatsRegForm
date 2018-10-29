@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <nav>
             <a href="login2.php">Log in</a>
             <a href="register.php">Register</a>
-            <a class="site-logo" href="index.html"><span class="logo"></span>MarketPlace</span></a>
+            <a class="site-logo" href="index.php"><span class="logo"></span>MarketPlace</span></a>
         </nav>
     </div>
     <div class="wrapper">
