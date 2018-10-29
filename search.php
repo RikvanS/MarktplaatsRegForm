@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $sql = "SELECT * FROM users WHERE username LIKE '%$search'";
         } else {
         echo "Error";
-        }       
+        }
     }
 
 

@@ -198,3 +198,6 @@ Het initiele plan voor vandaag is om de styling iets meer te verbeteren (Grid op
 Eerste opzet van een simpele zoekfunctie is live. Momenteel nog onbeveiligd en kaal/simplistisch, maar functioneel.
 Volgende stappen zijn het verbeteren van de code van de zoekfunctie en met name beveiliging inbouwen.
 Huidige versie gepusht.
+
+14:00
+Search verder uitgebouwd, trims toegevoegd, htmlspecialchars aan de invoer gekoppeld.
