@@ -201,3 +201,10 @@ Huidige versie gepusht.
 
 14:00
 Search verder uitgebouwd, trims toegevoegd, htmlspecialchars aan de invoer gekoppeld.
+
+------------------
+
+30/10: Begonnen met lessen OOP. Enkele kleine tests met classes gedaan.
+
+12:00 Begonnen met herschrijven van marktplaats project in OOP. Config.php als beginpunt gepakt, aparte folder gegeven, wanneer het compleet is wordt het gehele project in een aparte github repo gezet.
+Stappen, uitleg e.d. van het OOP project worden in een bijbehorende aparte readme gezet.
